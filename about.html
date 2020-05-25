@@ -11,27 +11,32 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/menu.css">
     </head>
 
 
-    <body>  
-        <!--Title-->
+    <body> 
+        <!--Nav Bar-->
         <div class="container">
-            <div class="row">
-                <div class="one-half column">
-                    <div></div><h1></span><p></p> Harry Linden Johnson &mdash;<br> Sound Designer and Composer</h1>
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger" id="hamburger"><div></div></div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul class="nav-ul" id="nav-ul">
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="about.html">Showreel</a></li>
+                            <li><a href="about.html">Contact</a></li>
+                            <li><a href="about.html">CV</a></li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <div class="one-half column">
-                
-                </div>
-            <div class="row"></div> 
             </div>
+        </div>
 
-            <div class="title-margin"><hr></div>
-
-            <!--Bio-->
-            <div class="row">
+        <!--About Me-->
+         <div class="about">
                 <div class="six columns">
                     <div class="row">
                         <br>
@@ -61,71 +66,6 @@
                     </div>
                 </div>
             </div>
-
-            <div class="row"><hr></div>
-
-            <!--Video Portfolio-->
-
-            <div class="row">
-                <div class="twelve columns">
-                    <h2>FILM MUSIC</h2>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="six columns">
-                    <div>
-                        <video id="vid1" class="vid"poster="video/akgstill.jpg" src="video/210520_AKT_'WeAreFamily'_AJ_Master_v2.mp4"></video>
-                    </div>
-                </div>
-                <div class="six columns">
-                    <div>
-                        <video id="vid2" class="vid" poster="video/TURNING_TIDES_stills13 crop169.jpg" src="video/turningtides.mp4"></video>
-                    </div>
-                </div>
-                
-            </div>
-            
-            <!--Footer-->
-            <div class="row" style="margin-top:5rem;">
-                <hr class="f">
-                <div class="footer">
-                    <div class="six columns">
-                    <div class="button u-full-width">Contact</div></a>
-                    </div>
-                    <div class="six columns">
-                     <a href="Harry Linden Johnson, CV.pdf"><div class="cv-button u-full-width">Résumé</a></div>
-                    </div>
-                    <div style="margin-bottom: 3rem;"></div>
-                
-                </div>
-            </div>
-
-
-
-            <script type="text/javascript">
-                (function(window) {
-                    function setupVideo(){
-                        var v = document.getElementById('vid1','vid2');
-                        v.addEventListener('mouseover', function() { this.controls = true; }, false);
-                        v.addEventListener('mouseout', function() { this.controls = false; }, false);
-                    }
-
-                    window.addEventListener('load', setupVideo, false);
-                })(window);
-            </script>
-        
-
-        
-        
-    
-               
-            
         </div>
-        
-       
-
-        
     </body>
 </html>
-
