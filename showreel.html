@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>HLJ</title>
+        <meta name="description" content="hlj.co.uk is the home of Harry Linden Johnson, Freelance Sound Designer and Composer">
+        <meta name="author" content="Harry Linden Johnson">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/0250b07cd2.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/menu.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+
+    <body> 
+        <!--Nav Bar-->
+        <div class="container">
+            <div class="menu-wrap">
+                <input type="checkbox" class="toggler">
+                <div class="hamburger" id="hamburger"><div></div></div>
+                <div class="menu">
+                    <div>
+                        <div>
+                            <ul class="nav-ul" id="nav-ul">
+                                <li><a href="home.html">Home</a></li>
+                                <li><a href="about.html">About Me</a></li>
+                                <li><a href="about.html">Contact</a></li>
+                                <li><a href="about.html">CV</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="scroll-wrap">
+                <div class="scrolldown">
+                    <i class="fas fa-chevron-down fa-3x, "></i>
+                </div>
+            </div>
+            
+            <!--Showreel-->
+            <div class="full-height-wrapper" id="aboutme">
+                <div class="full-page">
+                    <div class="title-card">
+                        <div class="bg"></div>
+                        <h1> Showreel &mdash;</h1>
+                    </div>
+                </div>
+                <div class="full-page">
+                    <div class="showreel">
+                        <div class="row">
+                            <div class="six columns">
+                                <div>
+                                    <video id="vid1" class="vid"poster="video/akgstill.jpg" src="video/210520_AKT_'WeAreFamily'_AJ_Master_v2.mp4"></video>
+                                </div>
+                            </div>
+                            <div class="six columns">
+                                <div>
+                                    <video id="vid2" class="vid" poster="video/TURNING_TIDES_stills13 crop169.jpg" src="video/turningtides.mp4"></video>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="six columns">
+                                <div>
+                                    <video id="vid3" class="vid"poster="video/akgstill.jpg" src="video/210520_AKT_'WeAreFamily'_AJ_Master_v2.mp4"></video>
+                                </div>
+                            </div>
+                            <div class="six columns">
+                                <div>
+                                    <video id="vid4" class="vid" poster="video/TURNING_TIDES_stills13 crop169.jpg" src="video/turningtides.mp4"></video>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            $('#vid1, #vid2, #vid3, #vid4').hover(function toggleControls() {
+                                if (this.hasAttribute("controls")) {
+                                this.removeAttribute("controls")
+                                } else {
+                                    this.setAttribute("controls", "controls")
+                                }
+                            })
+                        </script>
+                        
+        
+                        
+                
+                    </div>
+            
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
