@@ -36,8 +36,8 @@
                     <div>
                         <ul class="nav-ul" id="nav-ul">
                             <li><a href="home.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
                             <li><a href="showreel.html">Showreel</a></li>
-                            <li><a href="contact.html">Contact</a></li>
                             <li><a href="about.html">CV</a></li>
                         </ul>
                     </div>
@@ -57,46 +57,45 @@
             <div class="full-page">
                 <div class="title-card">
                     <div class="bg"></div>
-                    <h1> About Me &mdash;</h1>
+                    <h1> Contact&mdash;</h1>
                 </div>
                 
             </div>
             <div class="full-page">
                 <div class="about" name="about">
-                    <div>
+                    <div class="twelve columns">
                         <div class="six columns">
-                            <h2 class="whitey">BIOGRAPHY</h2>
-                            
-                            <p>Harry is a London based Sound Designer and Composer working in Theatre, Film and Media. 
-                                Having originally trained as a drummer and orchestral percussionist Harry then went on 
-                                to study Sound Design at The Royal Central School of Speech and Drama. 
-                            </p>
-                            <p>He has designed sound and music for a number of productions. Including ‘God of Carnage’ 
-                                at Bath Theatre Royal, ‘Richard III’ and ‘Romeo and Juliet’ for the temporary Rose Theatre 
-                                in York and ‘Br’er Cotton’ for Theatre 503 in London. A more detailed selection of productions 
-                                can be found on his CV.
-                            </p>
-                            <p>Harry has a special interest in working with devising companies creating music and sound to 
-                                accompany movement and has also worked as an Associate Sound Designer in Europe and the U.S.A
-                            </p>
+                           <h2 class="whitey">Email</h2>
+                           <h3 class="whitey">harrylindenjohnson@gmail.com</h3>
+                           <h2 class="whitey">Phone</h2>
+                            <h3 class="whitey">+44 7887991091</h3>
                         </div>
                         
                         <div class="six columns">
-                            <h2 class="whitey">Awards</h2>
-                            <p>
-                                Offie's 2020 Nomination - Stray Dogs (Park90) <br>
-                                Offie's 2020 Nomination - One Million Tiny Plays about Britain (Jermyn Street Theatre) <br>
-                                Shortie of the Year 2019 - Turning Tides (London Surf Film Festival)<br>
-                            </p>
+                            <div id="map"></div>
+                                <script>
+                                    // Initialize and add the map
+                                    function initMap() {
+                                    // The location of Uluru
+                                    var uluru = {lat: 51.210063, lng:-2.648037};
+                                    // The map, centered at Uluru
+                                    var map = new google.maps.Map(
+                                        document.getElementById('map'), {zoom: 10, center: uluru, disableDefaultUI: true});
+                                    // The marker, positioned at Uluru
+                                    var marker = new google.maps.Marker({position: uluru, map: map});
+                                    
+                                    }
+                                </script>
+                                        <!--Load the API from the specified URL
+                                        * The async attribute allows the browser to render the page while the API loads
+                                        * The key parameter will contain your own API key (which is not needed for this tutorial)
+                                        * The callback parameter executes the initMap() function
+                                        -->
+                                <script async defer
+                                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-GiUTVdOOmHFcNlKjEonWsQLRo5jNAX8&callback=initMap">
+                                </script>
                             
-                            <h2 class="whitey">Reviews</h2>
-                            <div>
-                                "Harry Johnson’s sound design is subtle but deeply effective."<br>
-                                <div class="italic whitey"> Guardian (Br'er Cotton)</div><br>
-                                "Harry Johnson’s sound design conjures terrifying gunfire and absolute calm in an envelope of fluent story-telling."<br>
-                                <div class="italic whitey"> FringeReview (Babette's Feast)</div>
-                                <!--<div style="margin-bottom: 3rem;"></div>-->
-                            </div>
+                            
                         </div>
                     </div>
                     <footer class="social-outer">

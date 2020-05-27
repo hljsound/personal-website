@@ -199,8 +199,23 @@
 	color: white;
 }
 
+.contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	height: 100vh;
+	color: white;
+	text-align: center;
+}
+
 .whitey {
 	color: white;
+}
+
+.black {
+	color: black;
 }
 
 .showreel {
@@ -256,13 +271,12 @@
 	display: block;
 	height: 100%;
 	width: 100%;
-	width: 80vw;
 }
 
 .social-wrap {
 	display: flex;
 	height: 100%;
-	bottom: 20px;
+	bottom: 30px;
 	position: relative;
 	align-items: flex-end;
 	
@@ -273,10 +287,29 @@
 	display: flex;
 	position: relative;
 	font-size: 25px;
-	justify-content: center;
+	justify-content: flex-start;
 }
 
 .icon {
-	margin-left: 10%;
+	
 	margin-right: 10%;
+	
+	padding: 5px;
+	background-size: 20px;
 }
+
+.icon:hover {
+	color: silver;
+	
+}
+
+.text-right {
+	text-align: right;
+}
+
+
+
+#map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
