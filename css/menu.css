@@ -248,3 +248,35 @@
 		bottom: 0px;
 	}
 }
+
+
+/* Social Icons */
+.social-outer {
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 100%;
+	width: 80vw;
+}
+
+.social-wrap {
+	display: flex;
+	height: 100%;
+	bottom: 20px;
+	position: relative;
+	align-items: flex-end;
+	
+	
+	
+}
+.socials {
+	display: flex;
+	position: relative;
+	font-size: 25px;
+	justify-content: center;
+}
+
+.icon {
+	margin-left: 10%;
+	margin-right: 10%;
+}
